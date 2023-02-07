@@ -1,10 +1,12 @@
 var author = ''
 var originalQuote = ''
+var category = ''
 var authorEl = document.getElementById('author')
 var quoteEl = document.getElementById('originalQuote')
+var categoryList = document.getElementById('categoryList')
+var getQuoteButton = document.getElementById('getQuoteButton')
 
-
-var category = [
+var categoryList = [
   "alone",
   "amazing",
   "anger",
