@@ -3,8 +3,8 @@ var originalQuote = ''
 var category = ''
 var authorEl = document.getElementById('author')
 var quoteEl = document.getElementById('originalQuote')
-var categoryList = document.getElementById('categoryList')
 var getQuoteButton = document.getElementById('getQuoteButton')
+var categoryDropdown = document.getElementById('categoryDropdown')
 
 var categoryList = [
   "alone",

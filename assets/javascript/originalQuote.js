@@ -1,4 +1,5 @@
-$("#categoryList").autocomplete({ source: categoryList });
+// Call this function on page load
+populateCategoryDropdown(categoryList)
 
 var category = "happiness";
 
@@ -36,4 +37,15 @@ function getQuoteInfo(result) {
 function displayQuoteInfo() {
   authorEl.textContent = "Author: " + author;
   quoteEl.textContent = "Quote: " + originalQuote;
+}
+
+// This function generates the options for the category dropdown  
+function populateCategoryDropdown(array){
+  for (let i = 0; i < array.length; i++) {
+    var option = document.createElement('option')
+    option.setAttribute('value', array[i])
+    option.textContent = array[i]
+    categoryDropdown.appendChild(option)
+    
+  }
 }
