@@ -26,20 +26,9 @@
         <button id="btn">Click to generate new Quote</button>
         <div id="output">Quote output here</div>
     </div>
-
-    <div id="quoteTarget">
-    <h2> Select language for Quote Translation</h2>
-    <h3>Choose one and click submit:</h3>
-        <select id="" name="lang">
-        <option value="french">French</option>
-        <option value="spanish">Spanish</option>
-        <option value="japanese">Japanese</option>
-        <option value="german">German</option>
-        </select>
-        <input type="submit">
-    </div>
 </section>
-    <section id="sectionHistory">
+    
+  <section id="sectionHistory">
     <h2 id="quoteHistory">Previous Quotes
     <ul>Previous Quote1</ul>
     <ul>Previous Quote2</ul>
@@ -53,14 +42,49 @@
           <p class="card-text">Translation</p>
         </div>
       </div>
+      <form>
         <select id="language">
-          <option value="english">English</option>
-          <option value="spanish">Spanish</option>
-          <option value="french">French</option>
+          <option value="Bulgarian">Bulgarian</option>
+          <option value="Czech">Czech</option>
+          <option value="Danish">Danish</option>
+          <option value="German">German</option>
+          <option value="Greek">Greek</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Estonian">Estonian</option>
+          <option value="Finnish">Finnish</option>
+          <option value="French">French</option>
+          <option value="Hungarian">Hungarian</option>
+          <option value="Indonesian">Indonesian</option>
+          <option value="Italian">Italian</option>
+          <option value="Japanese">Japanese</option>
+          <option value="Korean">Korean</option>
+          <option value="Lithuanian">Lithuanian</option>
+          <option value="Latvian">Latvian</option>
+          <option value="Norwegian">Norwegian</option>
+          <option value="Dutch">Dutch</option>
+          <option value="Polish">Polish</option>
+          <option value="Portuguese (Brazilian)">Brazilian Portuguese</option>
+          <option value="Portuguese (Non-Brazilian)">Portuguese (other)</option>
+          <option value="Romanian">Romanian</option>
+          <option value="Russian">Russian</option>
+          <option value="Slovak">Slovak</option>
+          <option value="Slovenian">Slovenian</option>
+          <option value="Swedish">Swedish</option>
+          <option value="Turkish">Turkish</option>
+          <option value="Ukranian">Ukranian</option>
+          <option value="Chinese (simplified)">Simplified Chinese</option>
         </select>
         <button type="submit">Translate</button>
       </form>
       <div id="translation"></div>
+
+    <section id="originQuote">
+        <h1 id="author"></h1>
+        <h2 id="originalQuote"></h2>
+        <select id="categoryDropdown"></select>
+        <button id="getQuoteButton">Get Quote</button>
+    </section>
+    
     <section id="targetQuote">
 
     </section>
