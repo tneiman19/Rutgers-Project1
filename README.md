@@ -1,14 +1,15 @@
 # Rutgers-Project1
-Song Lyrics Translator App
+Quotes Translator App
 
-As a music lover, I want to be able to translate the lyrics of my favorite songs into my native language so that I can better understand the message and meaning behind the lyrics.
+As a language learner,
+I want to be able to translate quotes into other languages
+So that I can expand my vocabulary and understanding of different cultures.
 
-Given that I am on the music lyrics translator webpage, when I input the lyrics and select the source and target languages, I should be able to see the translated lyrics.
+Acceptance Criteria:
+- User can input a quote in the original language
+- User can select a target language from a drop-down menu
+- User can press a "Translate" button to initiate the translation process
+- The translated quote is displayed on the screen
+- User can switch between languages for translation
+- The application provides accurate and reliable translations
 
-Acceptance criteria:
-
-The webpage should have a user-friendly interface that allows me to easily input the lyrics and select the languages.
-The translated lyrics should accurately reflect the meaning of the original lyrics.
-The webpage should be able to handle different languages and special characters.
-The translated lyrics should be displayed on the same page, below the original lyrics.
-The webpage should be accessible on both desktop and mobile devices.

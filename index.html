@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Lyrics Translator</title>
+    <title>Quotes Translator</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <header>
-        <h1>Music Lyrics Translator</h1>
+        <h1>Quotes Translator</h1>
     </header>
+    
+    <section id="originQuote">
+        <h1 id="author"></h1>
+        <h2 id="originalQuote"></h2>
+        <input type="text" id="categoryList">
+        <button id="getQuoteButton">Get Quote</button>
+    </section>
+    <section id="sectionTranslate">
+    <div id="quoteSource">
+        <input type="text" id="text">
+        <button id="btn">Click to generate new Quote</button>
+        <div id="output">Quote output here</div>
+    </div>
+
+    <div id="quoteTarget">
+    <h2> Select language for Quote Translation</h2>
+    <h3>Choose one and click submit:</h3>
+        <select id="" name="lang">
+        <option value="french">French</option>
+        <option value="spanish">Spanish</option>
+        <option value="japanese">Japanese</option>
+        <option value="german">German</option>
+        </select>
+        <input type="submit">
+    </div>
+</section>
+    <section id="sectionHistory">
+    <h2 id="quoteHistory">Previous Quotes
+    <ul>Previous Quote1</ul>
+    <ul>Previous Quote2</ul>
+    <ul>Previous Quote3</ul>
+    <ul>Previous Quote3</ul>
+    <ul>Previous Quote4</ul></h2>
+    </section>
     <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h2 class="card-title">Original Lyrics </h2>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h2 class="card-title">Quote to be translated </h2>
+          <p class="card-text">Translation</p>
         </div>
       </div>
         <select id="language">
@@ -27,16 +61,6 @@
         <button type="submit">Translate</button>
       </form>
       <div id="translation"></div>
-    <footer>
-
-    </footer>
-    <section id="originQuote">
-        <h1 id="author"></h1>
-        <h2 id="originalQuote"></h2>
-        <input type="text" id="categoryList">
-        <button id="getQuoteButton">Get Quote</button>
-    </section>
-
     <section id="targetQuote">
 
     </section>
