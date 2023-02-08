@@ -41,7 +41,7 @@ function getQuoteInfo(result) {
 function displayQuoteInfo() {
   authorEl.textContent = author;
   quoteEl.textContent = originalQuote;
-  //saveQuote(originalQuote, originalQuote)  Testing.  This will be called after we get the translated quote to save to local storge
+  saveQuote(originalQuote, originalQuote) // Testing.  This will be called after we get the translated quote to save to local storge
 }
 
 // This function generates the options for the category dropdown

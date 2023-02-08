@@ -4,7 +4,7 @@ function checkLocalStorage() {
   if (localStorage.getItem("quotes") === null) {
     return [];
   } else {
-    return JSON.parse(localStorage.getItem("Scores"));
+    return JSON.parse(localStorage.getItem("quotes"));
   }
 }
 
@@ -24,8 +24,8 @@ function removeAllChildNodes(parent) {
   }
 }
 
-// function renderButtons(array){
-//  console.log(array)
-// }
+function renderButtons(array){
+ console.log(array)
+}
 
-// renderButtons(usedQuotes)
+renderButtons(usedQuotes)
