@@ -34,28 +34,30 @@
         cursor: pointer;
       } */
    
-      .header{
+    .h1{
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
         font-size: x-large ;
     }
     
-    
     body{
         background-color: darkgray;
         }
     
-    .sectionTranslate{
+    .translate{
     float: left;
+    height: 400px;
+    width: auto;
+    margin:0 auto;
     }
     
     #text{
         height:40px;
         width: 600px;
     }
-    
+
     #quoteSource{
-        background-color: #0E2431;
+        background-color: lightblue;
         border: 5px solid #f5e4c3; 
         height: 400px;
         width: auto;
@@ -68,34 +70,36 @@
         background-color:lightgray;
         border: 5px solid #f5e4c3; 
         height: 400px;
-        width: 1200px;
+        width: auto;
         margin:0 auto;
         text-align: center;
     }
+    
     
     #sectionHistory{
         float: auto;
     }
     
-    #quoteHistory {
+    /* #quoteHistory {
         background-color:lightgray;
         border: 5px solid #f5e4c3; 
         height: 800px;
         width: auto;
         margin:0 auto;
         text-align: center;
-        }
+        } */
     
     
-    #btn {
+    .getQuoteButton{
         margin: 50px auto;
         height:50px;
         width: 250px;
-        font: size 22px;
+        font: size 44px;
         background-color: rgb(192,191,191);
     
     }
-    
+
+
     #submit {
         margin: 50px auto;
         height:50px;
