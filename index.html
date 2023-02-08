@@ -24,6 +24,7 @@
     <div id="quoteSource">
         <section id="originQuote">
             <select id="categoryDropdown"></select>
+
             <button id="getQuoteButton">Click to generate new Quote</button>
             <h1>Author: <span id="author"></span></h1>
             <h2>Quote: <span id="originalQuote"></span></h2>
@@ -65,33 +66,21 @@
           <option value="Ukranian">Ukranian</option>
           <option value="Chinese (simplified)">Simplified Chinese</option>
         </select>
+
         <button class="getQuoteButton">Translate</button>
         <h2>Translated Quote: <span id="translatedQuote"></span></h2>
+
+        
     </div>
 </div>
       <div id="translation"></div>
 
-    <!-- <section id="originQuote">
-        <h1 id="author"></h1>
-        <h2 id="originalQuote"></h2>
-        <select id="categoryDropdown"></select>
-        <button id="getQuoteButton">Get Quote</button>
-    </section> -->
-    
     <section id="targetQuote"></section>
 
-    <!-- <section id="sectionHistory">
-    <h2 id="quoteHistory">Previous Quotes</h2>
-    <ul>Previous Quote1</ul>
-    <ul>Previous Quote2</ul>
-    <ul>Previous Quote3</ul>
-    <ul>Previous Quote3</ul>
-    <ul>Previous Quote4</ul></h2>
-    </section> -->
-
-    <section id="previousQuotes">
-
-    </section>
+    <div>
+    <h2 id="quoteHistory">Previous Translated Quotes 
+        <p><button type="submit">Previous Quote</button></p></h2>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
