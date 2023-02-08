@@ -24,9 +24,10 @@
     <div id="quoteSource">
         <section id="originQuote">
             <select id="categoryDropdown"></select>
-            <button id="getQuoteButton" class="getQuoteButton">Click to generate new Quote</button>
-            <h1 id="author"></h1>
-            <h2 id="originalQuote"></h2>
+
+            <button id="getQuoteButton">Click to generate new Quote</button>
+            <h1>Author: <span id="author"></span></h1>
+            <h2>Quote: <span id="originalQuote"></span></h2>
         </section>
     </div>
 </section>
@@ -65,7 +66,11 @@
           <option value="Ukranian">Ukranian</option>
           <option value="Chinese (simplified)">Simplified Chinese</option>
         </select>
-        <button type="submit" class="getQuoteButton">Translate</button>
+
+        <button class="getQuoteButton">Translate</button>
+        <h2>Translated Quote: <span id="translatedQuote"></span></h2>
+
+        
     </div>
 </div>
       <div id="translation"></div>
@@ -75,11 +80,12 @@
     <div>
     <h2 id="quoteHistory">Previous Translated Quotes 
         <p><button type="submit">Previous Quote</button></p></h2>
-
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
 
+    <script src="./assets/javascript/localStorage.js"></script>
     <script src="./assets/javascript/config.js"></script>
     <script src="./assets/javascript/originalQuote.js"></script>
     <script src="./assets/javascript/targetQuote.js"></script>

@@ -1,10 +1,11 @@
-var author = ''
-var originalQuote = ''
-var category = ''
-var authorEl = document.getElementById('author')
-var quoteEl = document.getElementById('originalQuote')
-var getQuoteButton = document.getElementById('getQuoteButton')
-var categoryDropdown = document.getElementById('categoryDropdown')
+var author = "";
+var originalQuote = "";
+var category = "";
+var authorEl = document.getElementById("author");
+var quoteEl = document.getElementById("originalQuote");
+var getQuoteButton = document.getElementById("getQuoteButton");
+var categoryDropdown = document.getElementById("categoryDropdown");
+var previousQuotes = document.getElementById("previousQuotes");
 
 var categoryList = [
   "alone",
@@ -74,4 +75,3 @@ var categoryList = [
   "movies",
   "success",
 ];
-
