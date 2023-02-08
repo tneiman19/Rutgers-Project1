@@ -39,8 +39,9 @@ function getQuoteInfo(result) {
 
 //This function sets the author and quote on the DOM
 function displayQuoteInfo() {
-  authorEl.textContent = "Author: " + author;
-  quoteEl.textContent = "Quote: " + originalQuote;
+  authorEl.textContent = author;
+  quoteEl.textContent = originalQuote;
+  //saveQuote(originalQuote, originalQuote)  Testing.  This will be called after we get the translated quote to save to local storge
 }
 
 // This function generates the options for the category dropdown
