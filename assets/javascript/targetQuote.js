@@ -1,9 +1,3 @@
-var targetLang;
-var target2;
-var originalQuote;
-var languageSelector = document.getElementById("language");
-var translateButton = document.getElementById("translateButton");
-var translatedText = document.getElementById("translatedQuote");
 
 //this switch statement sets the target language parameter for the DeepL API
 function setLanguage(){
@@ -110,7 +104,6 @@ function translate(){
     const textToTranslate = originalQuote;
     const options = {
         method: 'POST',
-        // mode: "no-cors",
         headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'User-Agent': 'YourApp',
