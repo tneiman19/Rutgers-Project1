@@ -2,6 +2,8 @@ var targetLang;
 var target2;
 var originalQuote;
 var languageSelector = document.getElementById("language");
+var translateButton = document.getElementById("translateButton");
+var translatedText = document.getElementById("translatedQuote");
 
 //this switch statement sets the target language parameter for the DeepL API
 function setLanguage(){
@@ -98,4 +100,39 @@ switch (targetLang) {
         console.log("You fucked up. Fix it");
         break;
 }
+console.log(target2);
 }
+
+function translate(){
+    const targetLanguage = target2;
+    const link = 'https://api-free.deepl.com/v2/translate';
+    const deeplAccessCode = 'f3cf3178-eaeb-9232-99b1-284d5047b6ef:fx';
+    const textToTranslate = originalQuote;
+    const options = {
+        method: 'POST',
+        // mode: "no-cors",
+        headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'YourApp',
+        'Accept': '*/*',
+    },
+        body: `auth_key=${deeplAccessCode}&text=${textToTranslate}&target_lang=${targetLanguage}`,
+    };
+    fetch(link, options)
+    .then(response => {
+        console.log(response);
+        return response.json()})
+    .then(function(data) {
+        console.log(data);
+        console.log(data.translations[0].text)
+        translatedText.textContent = data.translations[0].text;
+    })
+}
+
+
+function translateText(){
+    setLanguage();
+    translate();
+}
+
+translateButton.addEventListener("click", translateText);
