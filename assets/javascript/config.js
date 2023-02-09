@@ -1,5 +1,6 @@
 var author = "";
 var originalQuote = "";
+var translatedQuote = '';
 var category = "";
 var authorEl = document.getElementById("author");
 var quoteEl = document.getElementById("originalQuote");
