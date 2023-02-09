@@ -39,9 +39,11 @@ function getQuoteInfo(result) {
 
 //This function sets the author and quote on the DOM
 function displayQuoteInfo() {
-  authorEl.textContent = author;
-  quoteEl.textContent = originalQuote;
-  saveQuote(originalQuote, originalQuote) // Testing.  This will be called after we get the translated quote to save to local storge
+  //authorEl.textContent = author;
+  //quoteEl.textContent = originalQuote;
+  logLetters(author, authorEl);
+  logLetters(originalQuote, quoteEl);
+  saveQuote(originalQuote, originalQuote); // Testing.  This will be called after we get the translated quote to save to local storge
 }
 
 // This function generates the options for the category dropdown
@@ -51,5 +53,16 @@ function populateCategoryDropdown(array) {
     option.setAttribute("value", array[i]);
     option.textContent = array[i];
     categoryDropdown.appendChild(option);
+  }
+}
+
+// This function takes in a string and a DOM Element and will loop through the string displaying the string in the element one char at a time 
+function logLetters(text, area) {
+  var tempText = "";
+  for (let i = 0; i < text.length; i++) {
+    setTimeout(function () {
+      tempText = tempText + text[i];
+      area.textContent = tempText;
+    }, i * 70);
   }
 }
