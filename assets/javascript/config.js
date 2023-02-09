@@ -6,6 +6,11 @@ var quoteEl = document.getElementById("originalQuote");
 var getQuoteButton = document.getElementById("getQuoteButton");
 var categoryDropdown = document.getElementById("categoryDropdown");
 var previousQuotes = document.getElementById("previousQuotes");
+var targetLang;
+var target2;
+var languageSelector = document.getElementById("language");
+var translateButton = document.getElementById("translateButton");
+var translatedText = document.getElementById("translatedQuote");
 
 var categoryList = [
   "alone",
