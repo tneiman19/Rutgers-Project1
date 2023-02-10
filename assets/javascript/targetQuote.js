@@ -127,7 +127,9 @@ function translate() {
 
 function translateText() {
   setLanguage();
-  translate();
+  if (!originalQuote){
+    return
+  } else translate();
 }
 
 translateButton.addEventListener("click", translateText);
