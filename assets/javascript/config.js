@@ -12,6 +12,8 @@ var target2;
 var languageSelector = document.getElementById("language");
 var translateButton = document.getElementById("translateButton");
 var translatedText = document.getElementById("translatedQuote");
+var container = document.getElementById("card-container");
+var btnContainer = document.getElementById('btnContainer')
 
 var categoryList = [
   "alone",

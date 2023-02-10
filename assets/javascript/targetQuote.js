@@ -121,14 +121,15 @@ function translate() {
       translatedQuote = data.translations[0].text;
       logLetters(translatedQuote, translatedText);
       saveQuote(originalQuote, translatedQuote);
+      setTimeout(callAnotherFunction(), 5000);
       //translatedText.textContent = data.translations[0].text;
     });
 }
 
 function translateText() {
   setLanguage();
-  if (!originalQuote){
-    return
+  if (!originalQuote) {
+    return;
   } else translate();
 }
 

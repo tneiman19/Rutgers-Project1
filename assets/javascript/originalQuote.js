@@ -1,5 +1,6 @@
 // Call this function on page load to populate the dropdown options
 populateCategoryDropdown(categoryList);
+renderCards(usedQuotes);
 
 getQuoteButton.addEventListener("click", fetchOriginalQuote);
 
