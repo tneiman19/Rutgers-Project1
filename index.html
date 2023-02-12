@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quotes Translator</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/cards.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" 
-    integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css" integrity="sha512-x8eU2Yx8Pd8XjWOTv+S/2jXGe586o6Ow722EaqGwG+4hkWaW1ZSAIMYUAY5QDyMglc9fPT0E1kZRIBwsdggtqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css"
+      integrity="sha512-x8eU2Yx8Pd8XjWOTv+S/2jXGe586o6Ow722EaqGwG+4hkWaW1ZSAIMYUAY5QDyMglc9fPT0E1kZRIBwsdggtqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./assets/css/modal.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="h1">Quotes Translator</h1>
+      <h1 class="h1">Quotes Translator</h1>
     </header>
-    
-    <section id="sectionTranslate">
-    <div id="quoteSource">
-        <section id="originQuote">
-            <select class="button button-rounded" id="categoryDropdown"></select>
 
-            <button class="button button-glow button-border button-rounded button-primary" id="getQuoteButton">Click to generate new Quote</button>
-            <h1>Author: <span id="author"></span></h1>
-            <h2>Quote: <span id="originalQuote"></span></h2>
+    <section id="sectionTranslate">
+      <div id="quoteSource">
+        <section id="originQuote">
+          <select class="button button-rounded" id="categoryDropdown"></select>
+
+          <button
+            class="button button-glow button-border button-rounded button-primary"
+            id="getQuoteButton"
+          >
+            Get Quote
+          </button>
+          <h1>Author: <span id="author"></span></h1>
+          <h2>Quote: <span id="originalQuote"></span></h2>
         </section>
-    </div>
-</section>
-    
+      </div>
+    </section>
+
     <div id="quoteTarget">
-        <div class="card-body">
-          <h2 class="card-title">Quote to be translated </h2>
+      <div class="card-body">
+        <h2 class="card-title">Quote to be translated</h2>
         <select id="language" class="dropdown, button button-rounded">
           <option value="Bulgarian">Bulgarian</option>
           <option value="Czech">Czech</option>
@@ -66,39 +82,50 @@
           <option value="Chinese (simplified)">Simplified Chinese</option>
         </select>
 
-        <button class="getQuoteButton, button button-glow button-border button-rounded button-primary" id="translateButton">Translate</button>
-        <h2>Translated Quote: <span id="translatedQuote"></span></h2> 
+        <button
+          class="getQuoteButton, button button-glow button-border button-rounded button-primary"
+          id="translateButton"
+        >
+          Translate
+        </button>
+        <h2>Translated Quote: <span id="translatedQuote"></span></h2>
+      </div>
     </div>
-</div>
-     
-<!-- <button data-index="0" id="myBtn">Open Modal</button> -->
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h4>Author: <span id="authorModalSpan"></span></h4>
-<p>quote: <span id="quoteModalSpan"></span></p>
-<h4>Language: <span id="languageModalSpan"></span></h4>
-<p>Translated: <span id="translatedModalSpan"></span></p>
-  </div>
-</div>
+    <!-- <button data-index="0" id="myBtn">Open Modal</button> -->
 
- 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h4>Author: <span id="authorModalSpan"></span></h4>
+        <p>quote: <span id="quoteModalSpan"></span></p>
+        <h4>Language: <span id="languageModalSpan"></span></h4>
+        <p>Translated: <span id="translatedModalSpan"></span></p>
+      </div>
+    </div>
 
-    <section>
-    <h2 id="quoteHistory">Previous Translated Quotes </h2>
-        <div id="btnContainer"></div>
+    <section id="quoteHistory">
+      <h2 >Previous Translated Quotes</h2>
+      <div id="btnContainer"></div>
 
-        <div class="card-container" id="card-container"></div>
+      <!-- <div class="card-container" id="card-container"></div> -->
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./assets/javascript/config.js"></script>
     <script src="./assets/javascript/localStorage.js"></script>
     <script src="./assets/javascript/originalQuote.js"></script>
     <script src="./assets/javascript/targetQuote.js"></script>
     <script src="./assets/javascript/modal.js"></script>
-</body>
+  </body>
 </html>

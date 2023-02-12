@@ -121,7 +121,7 @@ function translate() {
       translatedQuote = data.translations[0].text;
       logLetters(translatedQuote, translatedText);
       saveQuote(originalQuote, translatedQuote);
-      setTimeout(callAnotherFunction(), 5000);
+      setTimeout(callAnotherFunction(), 10000);
       //translatedText.textContent = data.translations[0].text;
     });
 }

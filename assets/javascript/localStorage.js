@@ -49,19 +49,19 @@ function removeAllChildNodes(parent) {
 
 //<button data-index="0" id="myBtn">Open Modal</button>
 
-function renderCards(array) {
-  console.log(array);
+function renderCards(myArray) {
+  console.log(myArray);
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < myArray.length; i++) {
     var newButton = document.createElement("button");
     newButton.setAttribute("data-index", i);
-    newButton.setAttribute("data-author", array[i].author);
-    newButton.setAttribute("data-quote1", array[i].originalQuote);
-    newButton.setAttribute("data-quote2", array[i].translatedQuote);
-    newButton.setAttribute("data-language", array[i].language);
+    newButton.setAttribute("data-author", myArray[i].author);
+    newButton.setAttribute("data-quote1", myArray[i].originalQuote);
+    newButton.setAttribute("data-quote2", myArray[i].translatedQuote);
+    newButton.setAttribute("data-language", myArray[i].language);
     //newButton.setAttribute("id", 'myModal')
     newButton.setAttribute("class", "myBtn");
-    newButton.innerText = array[i].author;
+    newButton.innerText = myArray[i].author;
     btnContainer.appendChild(newButton);
   }
   checkLocalStorage();
@@ -69,6 +69,7 @@ function renderCards(array) {
 
 function callAnotherFunction() {
   checkLocalStorage();
-  removeAllChildNodes(container);
+  removeAllChildNodes(btnContainer);
   renderCards(usedQuotes);
+  btnEvent()
 }
