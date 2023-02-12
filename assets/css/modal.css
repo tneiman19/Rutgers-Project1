@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.myBtn {
+.btn {
 
   display: inline-block;
   border: 2px solid #4caf50;
@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-.myBtn:hover {
+.btn:hover {
   background-color: #3e8e41;
   border-color: #3e8e41;
 }

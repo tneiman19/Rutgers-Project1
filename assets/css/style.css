@@ -6,6 +6,8 @@
 
 body {
   background-color: darkgray;
+    user-select: none;
+  
 }
 
 .translate {
@@ -23,7 +25,7 @@ body {
 #quoteSource {
   background-color: lightblue;
   border: 5px solid #f5e4c3;
-  height: 250px;
+  height: max-content;
   width: auto;
   margin: 0 auto;
   text-align: center;
@@ -33,10 +35,11 @@ body {
 #quoteTarget {
   background-color: lightgray;
   border: 5px solid #f5e4c3;
-  height: 250px;
+  height: max-content;
   width: auto;
   margin: 0 auto;
   text-align: center;
+  margin:0 auto ;
 }
 
 /* #sectionHistory{
