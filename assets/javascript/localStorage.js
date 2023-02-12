@@ -26,29 +26,6 @@ function removeAllChildNodes(parent) {
   }
 }
 
-// function renderCards(array) {
-//   console.log(array);
-
-//   for (let i = 0; i < array.length; i++) {
-//     var card = document.createElement("section");
-//     card.setAttribute("class", "card");
-//     var cardP = document.createElement("p");
-//     cardP.innerText = `Author: ${array[i].author}
-
-//   Original Quote: ${array[i].originalQuote}
-
-//   Translated To: ${array[i].language}
-
-//   Translated Quote: ${array[i].translatedQuote}
-//   `;
-//     card.appendChild(cardP);
-//     container.appendChild(card);
-//   }
-//   checkLocalStorage();
-// }
-
-//<button data-index="0" id="myBtn">Open Modal</button>
-
 function renderCards(myArray) {
   console.log(myArray);
 
@@ -60,7 +37,8 @@ function renderCards(myArray) {
     newButton.setAttribute("data-quote2", myArray[i].translatedQuote);
     newButton.setAttribute("data-language", myArray[i].language);
     //newButton.setAttribute("id", 'myModal')
-    newButton.setAttribute("class", "myBtn");
+    newButton.setAttribute("class", "myBtn btn");
+
     newButton.innerText = myArray[i].author;
     btnContainer.appendChild(newButton);
   }
@@ -71,5 +49,5 @@ function callAnotherFunction() {
   checkLocalStorage();
   removeAllChildNodes(btnContainer);
   renderCards(usedQuotes);
-  btnEvent()
+  btnEvent();
 }
