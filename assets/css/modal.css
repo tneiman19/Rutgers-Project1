@@ -12,11 +12,20 @@
 }
 
 .modal-content {
-  background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid #f57575;
   width: 80%; /* Could be more or less, depending on screen size */
+  border: 5px solid;
+  border: 2px solid #4caf50;
+  border-image: linear-gradient(to bottom right, #f5e4c3, lightblue) 1;
+  background: #4caf50;
+  padding: 20px;
+  color: aliceblue;
+  font-size:x-large;
+  font-weight: lighter;
+  font-family: 'Sanchez', serif;
+  text-align: center;
 }
 
 .close {
@@ -34,7 +43,6 @@
 }
 
 .btn {
-
   display: inline-block;
   border: 2px solid #4caf50;
   background-color: #4caf50;
