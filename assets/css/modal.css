@@ -13,10 +13,9 @@
 
 .modal-content {
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
   border: 3px solid #f57575;
-  width: 80%; /* Could be more or less, depending on screen size */
-  border: 5px solid;
+  width: 80vw; /* Could be more or less, depending on screen size */
+  height: max-content;
   border: 2px solid #4caf50;
   border-image: linear-gradient(to bottom right, #f5e4c3, lightblue) 1;
   background: #4caf50;
